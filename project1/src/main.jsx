@@ -12,20 +12,21 @@ root.render(
 
 function Header() {
   return (
-    <main>
-      <img src={reactLogo} alt="React Logo" width="40px" />
+    <header className="header">
+      <img src={reactLogo} className="nav-logo" alt="React Logo" width="40px" />
       <nav>
-        <ul className="nav-list"><li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li></ul>
+        <ul className="nav-list">
+          <li className="nav-list-item">Pricing</li>
+          <li className="nav-list-item">About</li>
+          <li className="nav-list-item">Contact</li></ul>
       </nav>
-    </main>
+    </header>
   )
 }
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <small>
         © 2026 Ziroll Development. All rights reserved
       </small>
@@ -35,22 +36,20 @@ function Footer() {
 
 function MainComponent() {
   return (
-    <Fragment>
+    // <Fragment>
       <main>
-      <h1>Fun Facts About React!</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 200k stars on GitHub</li>
-        <li>Is maintained by Meta</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-      </ul>
+        <h1>Fun Facts About React!</h1>
+        <ul>
+          <li>Was first released in 2013</li>
+          <li>Was originally created by Jordan Walke</li>
+          <li>Has well over 200k stars on GitHub</li>
+          <li>Is maintained by Meta</li>
+          <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
       </main>
-    </Fragment>
-
+    // </Fragment>
   )
 }
-
 function Page() {
   return (
     <>
